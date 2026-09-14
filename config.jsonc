@@ -1,0 +1,70 @@
+{
+  "logo": {
+    "source": "/home/puffy/.config/fastfetch/current_logo.png",
+    "type": "kitty",
+    "width": 50,
+    "height": 25
+  },
+
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  
+  "display": {
+    "separator": " ➜  ",
+    "color": {
+      "keys": "cyan",
+      "title": "blue"
+    }
+  },
+
+  "modules": [
+    {
+      "type": "title",
+      "color": {
+        "user": "blue",
+        "at": "white",
+        "host": "cyan"
+      }
+    },
+    {
+      "type": "separator",
+      "string": "───"
+    },
+    { "type": "os", "key": "󰣇 System" },
+    { "type": "kernel", "key": "󰒔 Kernel" },
+    { "type": "uptime", "key": "󱎫 Uptime" },
+    { "type": "packages", "key": "󰏖 Pacman" },
+    { "type": "shell", "key": "󱆃 Shell" },
+    { "type": "de", "key": "󰕮 Desktop" },
+    { "type": "wm", "key": "󱂬 WM" },
+    { "type": "theme", "key": "󰔎 Theme" },
+    { "type": "icons", "key": "󰀻 Icons" },
+    { "type": "cursor", "key": "󰛕 Cursor" },
+    { "type": "terminal", "key": "󰞷 Terminal" },
+    { "type": "terminalfont", "key": "󰛖 Font" },
+    "break",
+    { "type": "cpu", "key": "󰻠 CPU" },
+    { "type": "gpu", "key": "󰢮 GPU" },
+    { "type": "memory", "key": "󰍛 Memory" },
+    { "type": "swap", "key": "󰓡 Swap" },
+    { "type": "disk",
+      "key": "󰋊 System (/) ",
+      "folders": "/" },
+    { "type": "disk",
+      "key": "󱂵 Data (/home)",
+      "folders": "/home" },
+    { "type": "localip", "key": "󰩟 Local IP" },
+    { "type": "battery", "key": "󰁹 Battery" },
+    { "type": "poweradapter", "key": "󰚥 Power" },
+    "break",
+    {
+        "type": "custom",
+        "key": "󱞎 Terminal-Visuals",
+        "format": "nyancat, asciiquarium, cava, sl" //only if installed
+      },
+    "break",
+    "colors"
+  ]
+}
+
+
+
